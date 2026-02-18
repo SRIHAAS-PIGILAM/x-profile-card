@@ -1,0 +1,91 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  /* full-screen background */
+  .container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../assets/background.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* main card */
+  .profile-box{
+    color: #fff;
+    font: 16px poppins, sans-serif;
+    background-color: #ff574a;
+    text-align: center;
+    border-radius: 20px;
+    padding: 40px 90px;          /* vertical 40, horizontal 90 */
+    width: 430.8px;
+    height: 447px;
+    position: relative;
+  }
+  
+  /* row for menu + setting icons */
+  .top-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -50px;             /* span visually full width inside padded card */
+  }
+  
+  /* inner content box: pic + text + social */
+  .content-box{
+    height: 100%;                /* fill remaining height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     /* vertically center inside card */
+    align-items: center;
+  }
+  
+  /* icons in top row */
+  .menu-icon,
+  .setting-icon{
+    width: 25px;
+  }
+  
+  /* profile picture */
+  .profile-pic{
+    width: 150px;
+    border-radius: 50%;
+    border: 6px solid #fff;      /* white ring */
+    background-color: #2df7c5;   /* teal inner circle */
+    box-sizing: border-box;
+    padding: 6px;
+    margin-bottom: 20px;
+  }
+  
+  /* text */
+  h3{
+    margin-bottom: 4px;
+  }
+  
+  p{
+    margin-bottom: 20px;
+  }
+  
+  /* social media row */
+  .social-media{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .social-media img{
+    width: 20px;
+    cursor: pointer;
+  }
+  
